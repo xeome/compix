@@ -12,7 +12,10 @@ libconfuse
 ```sh
 sudo make all
 ```
+## Contact
+discord: jomo#4353
 ## Additional information
+My first C project and my first project where i actually used git
 this is the license from xcompmgr repo
 ```
 Copyright © 2003 Keith Packard
