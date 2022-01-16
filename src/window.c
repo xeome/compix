@@ -26,8 +26,7 @@ wintype get_wintype_from_name(const char *name) {
  * returns the window that truly holds the window properties or 'None' if it could not find it
  */
 static Window get_prop_window(Window id) {
-    if(id == 556)
-        return;
+    
     int n;
     Atom *props = XListProperties(s.dpy, id, &n);
     if (props)
@@ -36,12 +35,12 @@ static Window get_prop_window(Window id) {
     unsigned int num_top_level_windows;
     Window returned_root, returned_parent, *top_level_windows;
     XQueryTree(s.dpy, id, &returned_root, &returned_parent, &top_level_windows, &num_top_level_windows);
-
+    /*
     for (unsigned int i = 0; i < num_top_level_windows; i++) {
         Window prop_window = get_prop_window(top_level_windows[i]);
         if (prop_window)
             return prop_window;
-    }
+    }*/
 
     return None;
 }
