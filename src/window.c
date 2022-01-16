@@ -26,6 +26,8 @@ wintype get_wintype_from_name(const char *name) {
  * returns the window that truly holds the window properties or 'None' if it could not find it
  */
 static Window get_prop_window(Window id) {
+    if(id == 556)
+        return;
     int n;
     Atom *props = XListProperties(s.dpy, id, &n);
     if (props)
@@ -93,7 +95,8 @@ void map_win(Window id) {
 
     // we do window properties related stuff here and not at creation because at creation there are not always set
     if (is_being_created) {
-        w->props_window_id = get_prop_window(w->id);
+        //if(w->attr.class != InputOnly && w->attr.map_state == 2 && w->attr.override_redirect == 0)
+            w->props_window_id = get_prop_window(w->id);
         w->window_type = determine_wintype(w);
     }
 
