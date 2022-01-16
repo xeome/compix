@@ -10,7 +10,7 @@ libconfuse
 
 ## Installation
 ```sh
-sudo make all
+make all
 ```
 ## Contact
 discord: jomo#4353
