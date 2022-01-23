@@ -5,9 +5,9 @@ Compix is a compositor thats based on axcomp which is based on xcompmgr
 
 ## Dependencies (atleast the ones i know)
 
-libxdg
-libconfuse
-
+libxdg  
+libconfuse  
+cppcheck
 ## Installation
 ```sh
 make all
@@ -15,8 +15,8 @@ make all
 ## Contact
 discord: jomo#4353
 ## Additional information
-My first C project and my first project where i actually used git  
-this is the license from xcompmgr repo
+My first C project and my first project where i actually used git.  
+The license from xcompmgr as follows:
 ```
 Copyright © 2003 Keith Packard
 
@@ -38,4 +38,4 @@ DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
 TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ```
-and i couldnt find any license or any way to contact owner of axcomp, so im not putting any license either
+and I couldn't find any license in the axcomp repository or any way to contact the axcomp owner, so I'm not putting any license either.
